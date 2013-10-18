@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Big Daddy's Wagon Wheel Tavern</title>
+<link href='http://fonts.googleapis.com/css?family=Simonetta:400,400italic' rel='stylesheet' type='text/css'/>
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<link rel='stylesheet' type='text/css' href='fullcalendar/fullcalendar.css' />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/wagonwheel.js"></script>
+<script type='text/javascript' src='fullcalendar/fullcalendar.js'></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+		events:'ss/getEvents.php',
+		eventClick:function(calEvent, jsEvent, view) {
+
+        //alert('Event: ' + calEvent.title);
+        //alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+        //alert('View: ' + view.name);
+
+        // change the border color just for fun
+        //$(this).css('border-color', 'red');
+
+    }
+    })
+    
+   
+
+});
+</script>
+</head>
+
+<body>
+	
+<div id="main_wrapper">
+<header>
+	<nav>
+		<ul>
+			<li class="not_selected"><a href="index.htm">Home</a></li>
+			<li class="not_selected"><a href="menu.htm">Menu</a></li>
+			<li class="selected"><a href="events.htm">Events</a></li>
+			<li class="not_selected"><a href="about.htm">About</a></li>
+			<li class="not_selected"><a href="photos.htm">Photos</a></li>
+			
+		</ul>
+	</nav>
+	<a href="index.htm"><img src="images/logo.jpg"/></a>
+	
+</header>
+
+<div id="main_content">
+	<div id="sub_HeaderImage">
+		<img src="images/eventbg.jpg"/>
+	</div>
+	<p class="centered">Every Wednesday - Scott & Wayde - 7:30 - 11pm/No Cover - Jam & Bring Your Own Instrument & Amps</p>
+	<div id="calendar"></div>
+</div>
+
+
+<footer>
+	<div id="footer_content">
+	
+		<div id="footer_copy">
+			&copy; <span id="copy_year"></span> Big Daddy's Wagon Wheel.  All rights reserved. 		</div>
+		
+		<div id="footer_links">
+			<ul>
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="menu.htm">Menu</a></li>
+				<li><a href="events.htm">Events</a></li>
+				<li><a href="about.htm">About</a></li>
+				<li><a href="photos.htm">Photos</a></li>
+				
+			</ul>
+		</div>
+		
+	</div>
+	
+</footer>
+</div><!--End main_wrapper -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38147523-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

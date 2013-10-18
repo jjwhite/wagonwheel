@@ -1,0 +1,7 @@
+{"title":"Reaction","start":"04\/06\/2013","type":"Band"},
+{"title":"From The Wreckage","start":"04\/12\/2013","type":"Band"},
+{"title":"Haystacks Calhoun","start":"04\/13\/2013","type":"Band"},
+{"title":"Dysfunkshunal","start":"04\/19\/2013","type":"Band"},
+{"title":"Lupe Garu","start":"04\/20\/2013","type":"Band"},
+{"title":"Rebels Been Rebels","start":"04\/26\/2013","type":"Band"},
+{"title":"Groovitude","start":"04\/27\/2013","type":"Band"}
